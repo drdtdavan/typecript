@@ -1,0 +1,16 @@
+.flex-container {
+  display: flex;
+  justify-content: center;
+  background-color: darkorange;
+}
+.p-problem {
+  font-size: 2em;
+  order: 1;
+}
+.i-answer {
+  font-size: 2em;
+  order: 2;
+  width: 3em;
+  background-color: lightgreen;
+  border-style: solid
+}
