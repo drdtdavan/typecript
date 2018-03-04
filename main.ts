@@ -1,34 +1,25 @@
-let L1 = [0, 1, 2, 3, 4, 5, 10];
-let L2 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let n1 = 0;
-let n2 = 0;
-let ans = 0;
+
+
+
+let ansU = 0;
 let op = "+";
-let Level = "L1";
+let level = 1;
 
-function showName() {
-  let el = document.getElementById("p1")!;
-  el.innerHTML = "hello";
+function setLevel(value: any) {
+  level = parseInt(value);
 }
-
-function getNumbers(L: number[]) {
-  let n1: number = Math.floor(Math.random() * L.length);
-  let n2: number = Math.floor(Math.random() * L.length);
-}
-
 function showProblem() {
-  if (Level == "L1") {
-    getNumbers(L1);
-  } else {
-    getNumbers(L2);
-  }
-  let el = document.getElementById("p1")!;
-  el.innerHTML = n1 + " " + op + " " + n2 + " = ";
+let Q:Question=getProblem(level,op)
+let elP1 = document.getElementById("p1")!;
+elP1.innerText=`${Q.n1} ${Q.op} ${Q.n2} = `
 }
 
-function check(event:KeyboardEvent){
-    if(event.keyCode==13){
-     if
-    }
-    event.stopPropagation();
+function check(event: KeyboardEvent) {
+  if (event.keyCode == 13) {
+
+    let elP1 = document.getElementById("p1")!;
+    let elI1 = <HTMLInputElement>document.getElementById("i1")!;
+    ansU = parseInt(elI1.value);
+  }
+  event.stopPropagation();
 }

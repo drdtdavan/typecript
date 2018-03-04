@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <head><title>TypeScript Greeter</title></head>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <script src="main.js"></script>
-    <body>
-        <div class="flex-container">
-        <h1 class="p-problem" id="p1">5 + 8 =</h1>
-       <input onkeyup="check($event)" class="i-answer"type="text">
+<head>
+    <title>Maths</title>
+</head>
+<link type="text/css" href="main.css" rel="stylesheet">
+<script src="main.js" ></script>
+<script src="problems.js"></script>
+<body onclick="showProblem()">
+    <div class="flex-choice">
+        <input onCLick="setLevel(value)" name="choice" type="radio" value="1" checked="checked">
+        Level 1     
+        <input onCLick="setLevel(value)" name="choice" type="radio" value="2">
+        Level 2     
     </div>
-    </body>
+    <div class="flex-problem">
+        <h1 class="p-problem" id="p1"></h1>
+        <input class="i-answer" id="i1" type="number" onkeyup="check(event)">
+    </div>
+</body>
 </html>
