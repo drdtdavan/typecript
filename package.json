@@ -1,0 +1,30 @@
+{
+  "name": "typecript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "ts-loader": "^4.0.1",
+    "typescript": "^2.7.2",
+    "webpack": "^4.1.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^2.0.10"
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drdtdavan/typecript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drdtdavan/typecript/issues"
+  },
+  "homepage": "https://github.com/drdtdavan/typecript#readme"
+}
